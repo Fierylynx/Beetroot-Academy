@@ -1,0 +1,97 @@
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.link {
+  font-weight: 700;
+  color: #DB7093;
+}
+
+.link:hover {
+  border-bottom: 1px solid #DB7093;
+}
+
+.header {
+  padding: 30px 0;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #000;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__title {
+  font-size: 32px;
+}
+
+.main__wrapper {
+  display: grid;
+  grid-template-columns: 300px auto;
+  column-gap: 50px;
+}
+
+.aside__wrapper {
+  max-width: 300px;
+  text-align: center;
+}
+
+.aside__photo {
+  max-width: 200px;
+  margin: 0 auto 20px;
+}
+
+.aside__image {
+  border-radius: 50px;
+}
+
+.aside__subtitle {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.aside__content {
+  margin-bottom: 20px;
+}
+
+.aside__list {
+  display: flex;
+  justify-content: center;
+}
+
+.aside__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.about__content p {
+  margin-bottom: 20px;
+}
+
+.about__list {
+  margin-bottom: 20px;
+}
+
+.about__item {
+  font-weight: 500;
+}
+
+.about__item:not(:last-child) {
+  margin-bottom: 5px;
+}
