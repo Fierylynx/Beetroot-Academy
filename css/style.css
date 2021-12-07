@@ -1,118 +1,61 @@
+html {
+  height: 100%;
+}
 
 body {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  color: #000;
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
 }
 
-.container {
-  max-width: 1230px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
-.link {
-  color: #802a0b;
-  transition: color 0.5s;
-}
-
-.link:hover {
-  color: #eb7c54;
-}
-
-.margin {
-  margin-bottom: 100px;
-}
-
-.header {
-  position: fixed;
-  width: 100%;
-  padding: 30px 0;
-  background-color: #bebec4;
-  z-index: 10;
-}
-
-.menu__list {
-  display: flex;
-  justify-content: center;
-}
-
-.menu__item {
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.menu__item:not(:last-child) {
-  margin-right: 40px;
-}
-
-.hero {
-  position: relative;
+.wrapper {
+  min-height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  height: 100vh;
-  font-size: 42px;
-  text-align: center;
 }
 
-.hero::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0.5;
-  background-image: url(../assets/images/hero-bg.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: -1;
-}
-
-.about__title {
-  margin-bottom: 40px;
-  font-size: 28px;
-}
-
-.about__item:not(:last-child) {
-  margin-bottom: 40px;
-}
-
-.article__wrapper {
-  display: flex;
-  align-items: center;
-}
-
-.article__photo {
-  max-width: 300px;
-  margin-right: 40px;
-}
-
-.article__content p {
-  margin-bottom: 10px;
-}
-
-.article__subtitle {
-  margin-bottom: 5px;
-}
-
-.article__date {
-  display: block;
-  margin-bottom: 20px;
-  font-size: 14px;
-  font-style: italic;
-}
-
-.article__link {
-  color: #802a0b;
+.main {
+  flex: 1 1 auto;
 }
 
 .footer {
-  padding: 30px 0;
+  padding: 115px 0 35px;
+  background-color: #121116;
 }
 
 .footer__wrapper {
   text-align: center;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 45px;
+}
+
+.footer__title {
+  padding-bottom: 15px;
+  margin: 0 auto 15px;
+  max-width: 230px;
+  font-size: 20px;
+  font-weight: 400;
+  border-bottom: 1px solid #fff;
+  text-transform: uppercase;
+}
+
+.footer__list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.footer__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.footer__span {
+  color: #00c7fc;
 }
