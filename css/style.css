@@ -3,6 +3,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
+  color: #000;
 }
 
 .container {
@@ -11,87 +12,107 @@ body {
   margin: 0 auto;
 }
 
-.title {
-  margin-bottom: 20px;
-  font-size: 22px;
-}
-
 .link {
-  font-weight: 700;
-  color: #DB7093;
+  color: #802a0b;
+  transition: color 0.5s;
 }
 
 .link:hover {
-  border-bottom: 1px solid #DB7093;
+  color: #eb7c54;
+}
+
+.margin {
+  margin-bottom: 100px;
 }
 
 .header {
+  position: fixed;
+  width: 100%;
   padding: 30px 0;
-  margin-bottom: 30px;
-  border-bottom: 1px solid #000;
+  background-color: #bebec4;
+  z-index: 10;
 }
 
-.header__wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.header__title {
-  font-size: 32px;
-}
-
-.main__wrapper {
-  display: grid;
-  grid-template-columns: 300px auto;
-  column-gap: 50px;
-}
-
-.aside__wrapper {
-  max-width: 300px;
-  text-align: center;
-}
-
-.aside__photo {
-  max-width: 200px;
-  margin: 0 auto 20px;
-}
-
-.aside__image {
-  border-radius: 50px;
-}
-
-.aside__subtitle {
-  display: block;
-  font-size: 16px;
-  font-weight: 400;
-}
-
-.aside__content {
-  margin-bottom: 20px;
-}
-
-.aside__list {
+.menu__list {
   display: flex;
   justify-content: center;
 }
 
-.aside__item:not(:last-child) {
-  margin-right: 20px;
-}
-
-.about__content p {
-  margin-bottom: 20px;
-}
-
-.about__list {
-  margin-bottom: 20px;
-}
-
-.about__item {
+.menu__item {
+  font-size: 18px;
   font-weight: 500;
 }
 
+.menu__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  font-size: 42px;
+  text-align: center;
+}
+
+.hero::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.5;
+  background-image: url(../assets/images/hero-bg.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.about__title {
+  margin-bottom: 40px;
+  font-size: 28px;
+}
+
 .about__item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.article__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.article__photo {
+  max-width: 300px;
+  margin-right: 40px;
+}
+
+.article__content p {
+  margin-bottom: 10px;
+}
+
+.article__subtitle {
   margin-bottom: 5px;
+}
+
+.article__date {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.article__link {
+  color: #802a0b;
+}
+
+.footer {
+  padding: 30px 0;
+}
+
+.footer__wrapper {
+  text-align: center;
 }
