@@ -1,0 +1,234 @@
+@import url("fonts.css");
+
+body {
+  font-family: "OpenSans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #070707;
+}
+
+.container {
+  max-width: 970px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.padding {
+  padding: 100px 0;
+}
+
+.section-bg {
+  background-color: #F6F6F6;
+}
+
+.title {
+  margin-bottom: 30px;
+  font-family: "OpenSans-bold", sans-serif;
+  font-size: 34px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  transition: background-color .5s;
+}
+
+.header--scroll {
+  background-color: #828282;
+}
+
+.menu__list {
+  position: relative;
+  padding: 25px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #828282;
+}
+
+.menu__list::after {
+  position: absolute;
+  bottom: 0;
+  content: "";
+  width: 100%;
+  height: 2px;
+  opacity: 0.3;
+  box-shadow: 1px 3px 2px #828282;
+}
+
+.menu__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.menu__link {
+  padding: 10px 0;
+  opacity: 0.5;
+  transition: opacity .5s;
+  text-shadow: 1px 1px 2px #828282;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.hero__title {
+  margin-bottom: 39px;
+  font-family: "OpenSans-bold", sans-serif;
+  font-size: 47px;
+  font-weight: 700;
+}
+
+.about__content {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.about__content p:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.skills__content {
+  margin-bottom: 75px;
+}
+
+.skills__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 140px;
+  width: 100%;
+}
+
+.skills__subtitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  padding-top: 111px;
+  margin-bottom: 40px;
+  font-family: "Gilroy", sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.skills__subtitle::after {
+  position: absolute;
+  top: 0;
+  content: "";
+  width: 90px;
+  height: 87px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.skills__subtitle--first::after {
+  background-image: url("../assets/svg/photoshop.svg");
+}
+
+.skills__subtitle--second::after {
+  background-image: url("../assets/svg/illustrator.svg");
+}
+
+.skills__subtitle--third::after {
+  background-image: url("../assets/svg/effects.svg");
+}
+
+.skills__subtitle--four::after {
+  background-image: url("../assets/svg/figma.svg");
+}
+
+.portfolio__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.portfolio__item:not(:last-child) {
+  margin-bottom: 100px;
+}
+
+.portfolio__link {
+  text-decoration: underline;
+  transition: font-weight .5s;
+}
+
+.portfolio__link:hover {
+  font-weight: 700;
+}
+
+.portfolio__image {
+  padding-bottom: 10px;
+}
+
+.footer__wrapper {
+  max-width: 340px;
+  margin: 0 auto;
+}
+
+.footer__content {
+  margin-bottom: 80px;
+}
+
+.footer__button {
+  display: block;
+  max-width: 180px;
+  padding: 8px 15px;
+  margin: 0 auto 37px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #070707;
+  border-radius: 20px;
+  transition: background-color .5s;
+}
+
+.footer__button:hover {
+  background-color: #828282;
+}
+
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 44px;
+}
+
+.contacts__link img {
+  transition: opacity .5s;
+}
+
+.contacts__link img:hover {
+  opacity: 0.5;
+}
+
+.footer__copyright {
+  font-size: 14px;
+  color: #828282;
+}
+
+.jq-star:not(:last-child) {
+  margin-right: 8px;
+}
